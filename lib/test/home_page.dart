@@ -5,53 +5,26 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: Icon(Icons.menu),
         title: Text("Home", style: TextStyle(fontFamily: "poppins")),
         backgroundColor: Color(0xff5C6BC0),
         foregroundColor: Colors.white,
-      ),*/
-      body: Padding(
-        padding: const EdgeInsets.only(top: 80, left: 21, right: 21),
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Icon(Icons.menu),
-                Icon(Icons.notifications)
-              ],
-            ),
-            SizedBox(
-              height:11,
-            ),
-            TextField(
-              decoration: InputDecoration(
-                fillColor: Colors.grey.shade200,
-                filled: true,
-                hintText: "Search...",
-                prefixIcon: Icon(Icons.search),
-                suffixIcon: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Container(
-                      width: 1,
-                      height: 20,
-                      color: Colors.black,
-                    ),
-                    SizedBox(width: 11,),
-                    Icon(Icons.filter_alt_outlined),
-                  ],
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(50),
-                  borderSide: BorderSide.none
-                )
-              ),
-            )
-          ],
-        )
-      )
+      ),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.bottomCenter,
+            end: Alignment.topCenter,
+            stops: [0.0, 0.2, 0.7],
+            colors: [
+              Colors.yellow,
+              Colors.orange,
+              Colors.blue
+            ],
+          ),
+        ),
+      ),
       /*floatingActionButton: FloatingActionButton(
         backgroundColor: Color(0xff5C6BC0),
         foregroundColor: Colors.white,
@@ -63,6 +36,124 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+/// Column(
+//           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//           children: [
+//             SizedBox(
+//               width: 300,
+//               height: 200,
+//               child: Card(
+//                 elevation: 11,
+//                 shadowColor: Colors.amber.shade400,
+//                 color: Colors.amber,
+//               ),
+//             ),
+//         Container(
+//           width: 300,
+//           height: 200,
+//           decoration: BoxDecoration(
+//               gradient: LinearGradient(
+//                 begin: Alignment.bottomLeft,
+//                   end: Alignment.topRight,
+//                   colors: [
+//                     Colors.red,
+//                     Colors.purple,
+//                   ])
+//               /*boxShadow: [
+//                 BoxShadow(
+//                     offset: Offset(5, -5),
+//                     color: Colors.grey,
+//                     blurRadius: 11,
+//                     spreadRadius: 3
+//                 ),
+//                 *//*BoxShadow(
+//                     offset: Offset(-2, 0),
+//                     color: Colors.grey.shade50,
+//                     blurRadius: 7,
+//                     spreadRadius: 1
+//                 ),
+//                 BoxShadow(
+//                     offset: Offset(-2, -2),
+//                     color: Colors.grey.shade50,
+//                     blurRadius: 7,
+//                     spreadRadius: 1
+//                 )*//*
+//               ]*/
+//           ),
+//         )
+//           ],
+//         ),
+
+///Container(
+//           width: 300,
+//           height: 200,
+//           decoration: BoxDecoration(
+//             color: Colors.white,
+//             boxShadow: [
+//               BoxShadow(
+//                 offset: Offset(5,5),
+//                 color: Colors.amber.shade100,
+//                 blurRadius: 11,
+//                 spreadRadius: 3
+//               ),
+//               BoxShadow(
+//                   offset: Offset(-2,0),
+//                   color: Colors.grey.shade50,
+//                   blurRadius: 7,
+//                   spreadRadius: 1
+//               ),
+//               BoxShadow(
+//                   offset: Offset(-2,-2),
+//                   color: Colors.grey.shade50,
+//                   blurRadius: 7,
+//                   spreadRadius: 1
+//               )
+//             ]
+//           ),
+//         )
+
+///Padding(
+//         padding: const EdgeInsets.only(top: 80, left: 21, right: 21),
+//         child: Column(
+//           children: [
+//             Row(
+//               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//               children: [
+//                 Icon(Icons.menu),
+//                 Icon(Icons.notifications)
+//               ],
+//             ),
+//             SizedBox(
+//               height:11,
+//             ),
+//             TextField(
+//               decoration: InputDecoration(
+//                 fillColor: Colors.grey.shade200,
+//                 filled: true,
+//                 hintText: "Search...",
+//                 prefixIcon: Icon(Icons.search),
+//                 suffixIcon: Row(
+//                   mainAxisSize: MainAxisSize.min,
+//                   children: [
+//                     Container(
+//                       width: 1,
+//                       height: 20,
+//                       color: Colors.black,
+//                     ),
+//                     SizedBox(width: 11,),
+//                     Icon(Icons.filter_alt_outlined),
+//                   ],
+//                 ),
+//                 border: OutlineInputBorder(
+//                   borderRadius: BorderRadius.circular(50),
+//                   borderSide: BorderSide.none
+//                 )
+//               ),
+//             )
+//           ],
+//         )
+//       )
 
 ///Container(
 //           width: 300,
